@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define FN "room" 
+#define FN "room"
 
 using namespace std;
 

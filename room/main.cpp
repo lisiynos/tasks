@@ -6,14 +6,14 @@
 using namespace std;
 
 struct Point {
-  int x,y;
+  int x, y;
 };
 
 const int MIN = 1, MAX = 44;
 
 // Целое число в квадрате
 int sqr(int x) {
-  return x*x;
+  return x * x;
 }
 
 // Расстояние между точками равно длине отрезка
@@ -33,7 +33,7 @@ bool lenEquals(Point& A, Point& B, int l) {
 int main() {
   freopen(FN".in", "r", stdin);
   freopen(FN".out", "w", stdout);
-  int a,b,c; // Стороны треугольника
+  int a, b, c; // Стороны треугольника
   Point A, B, C; // Вершины треугольника
   cin >> a >> b >> c;
 
@@ -46,8 +46,8 @@ int main() {
             for(C.x = MIN; C.x <= MAX; C.x++)
               for(C.y = MIN; C.y <= MAX; C.y++) {
                 cnt++;
-                if(lenEquals(A,C,b) &&
-                    lenEquals(B,C,c)) {
+                if(lenEquals(A, C, b) &&
+                    lenEquals(B, C, c)) {
                   cout << "YES" << endl;
                   cout << A.x << " " << A.y << endl;
                   cout << B.x << " " << B.y << endl;
