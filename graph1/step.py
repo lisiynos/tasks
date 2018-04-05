@@ -3,6 +3,12 @@
 # Задача "Пошаговый обход графа"
 from __future__ import print_function
 
+# input() python 2/3 compatibility
+try:
+    input = raw_input
+except NameError:
+    pass
+
 import sys
 
 NAME = "step"
