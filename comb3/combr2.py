@@ -53,5 +53,5 @@ assert C(4, 2, 4) == 1  # (4,4)
 assert F(4, 2, [2, 3]) == 5
 
 n, k = map(int, input().split())
-comb = [map(int, input().split())]
+comb = list(map(int, input().split()))
 print(F(n, k, comb))
