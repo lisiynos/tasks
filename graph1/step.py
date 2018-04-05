@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # DFS = Depth First Search - Поиск в глубину - Обход в глубину
 # Задача "Пошаговый обход графа"
+from __future__ import print_function
+
 import sys
 
 NAME = "step"
