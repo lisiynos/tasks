@@ -17,3 +17,7 @@ script:
   - cd graph1
   - python step.py
   - cd ..
+  - cd comb3
+  - python comb2.py
+  - python combr2.py
+  - cd ..
