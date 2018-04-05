@@ -14,4 +14,6 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python graph1/step.py
+  - cd graph1
+  - python step.py
+  - cd ..
