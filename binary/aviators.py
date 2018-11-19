@@ -22,10 +22,11 @@ for x in A:
         while x % d == 0:
             P[d] += 1
             x //= d
-    if x >= 1:
+    if x > 1:
         P[x] += 1
 
+# Формирование ответа
 ans = 1
 for v in P:
-    ans = (ans * (v + 1)) % 10
+    ans = ans * (v + 1) % 10
 print(ans)
